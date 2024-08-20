@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      sh -c "npm install && npm run dev"
+    env_file:
+      - ./.env
+    ports: 
+      - ${HOST_PORT}:3000
+    volumes:
+      - .:/app
+    networks:
+      - common-network
+
+networks:
+  common-network:
+    driver: bridge

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #;
+  --primary-hover: #;
+  --secondary: #;
+  --background: #;
+  --container: #;
+  --border: #;
+  --title: #;
+  --text: #;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #;
+    --primary-hover: #;
+    --secondary: #;
+    --background: #;
+    --container: #;
+    --border: #;
+    --title: #;
+    --text: #;
+  }
+}
+
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
