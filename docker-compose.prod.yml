@@ -10,7 +10,7 @@ services:
     env_file:
       - ./.env
     ports: 
-      - ${HOST_PORT}:3000
+      - 12801:3000
     volumes:
       - .:/app
     networks:
